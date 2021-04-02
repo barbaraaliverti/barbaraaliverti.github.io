@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url("https://use.typekit.net/okm5tqy.css");
+
+:root {
+  --yellow: #fff76b;
+  --dark-yellow: #E8D256;
+}
+
+body {
+  margin: 0;
+}
+
+#background {
+  background-image: url(https://i.imgur.com/JzYUUMw.jpg);
+  background-size: cover;
+  }
+
+
+#header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 50px;
+  background: black;
+  opacity: 0.9;
+  }
+
+#navbar > ul {
+  position: fixed;
+  right: 0;
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+ }
+
+.menu {
+  text-decoration: none;
+  color: white;  
+}
+
+.menu:hover {
+  color: black;
+  background: var(--yellow);
+}
+
+#link-bar {
+  list-style: none;
+}
+
+#welcome-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-align: center;
+  background-color: rgba(0,0,0,0.7);
+}
+
+#my-name {
+  background: var(--yellow);
+  font-size: 3em;
+  font-family: aileron, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  max-width: 450px;
+  padding: 10px;
+}
+
+#bio {
+  max-width: 450px;
+  font-size: 22px;
+  font-weight:300;
+  color: white;  
+ }
+
+#projects {
+  font-family: 'Roboto Condensed', sans-serif;
+  text-align: center;
+  padding: 30px;
+  background: #eee;
+}
+
+#project-header {
+  font-size: 40px;
+  font-family: aileron, sans-serif;
+  font-weight: 700;
+}
+
+#project-grid {
+  display: grid;
+  grid-gap: 7vw;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  margin: 60px;
+ }
+
+.project-tile {
+  padding: 10px;
+  margin: 10px;
+  background-color: rgba(0,0,0,0.9);  
+}
+
+.project-tile:hover {
+  background: var(--dark-yellow);
+ }
+
+.project-tile:hover > a > p {
+  color: black;
+}
+
+.project-img {
+  width: 30vw;
+  height: auto;
+  }
+
+.project-link {
+  text-decoration: none;
+  color: black;
+}
+
+.project-title {
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+}
+
+#footer {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  background: black;
+  opacity: 0.9;
+  width: 100%;
+  height: auto;
+}
+
+#contact-me {
+  text-align: center;
+}
+
+#contact-text {
+  font-family: aileron, sans-serif;
+  font-size: 40px;  
+  color: white;
+}
+
+#contact-coffee {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-style: italic;
+  font-size: 25px;
+  font-weight: 300;
+  color: white;  
+}
+
+
+#links {
+  list-style: none;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 20px;
+  width: 50%;
+  margin-bottom: 5vw;
+}
+
+#links > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  font-size: 25px;
+}
+
+@media (max-width: 800px) {
+  
+  .menu {
+    padding: 10px;
+  }
+  
+  #navbar > ul {
+    right: 10vw;
+  }
+  
+  #bio {
+    padding: 15px;
+    text-align: justified;
+  }
+  
+  #links > ul {
+    flex-direction: column;
+    font-size: 18px;
+    padding-inline-start: 20px;
+  }
+  
+  .contact-link {
+    display: block;
+    padding: 10px;
+    max-width: 100%;
+  }
+  
+  
+   
+}
+
+.contact-link {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+.contact-link:hover {
+  background-color: var(--yellow);
+  color: black;
+}
