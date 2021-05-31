@@ -95,18 +95,25 @@ body {
   font-family: aileron, sans-serif;
   font-weight: 700;
 }
-
+/* 
 #project-grid {
   display: grid;
   grid-gap: 7vw;
   grid-template-columns: auto auto;
   justify-content: center;
   margin: 60px;
+ } */
+
+ #project-grid {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
  }
 
 .project-tile {
   padding: 10px;
-  margin: 10px;
+  margin: 2rem;
   background-color: rgba(0,0,0,0.9);  
 }
 
@@ -120,8 +127,8 @@ body {
 
 .project-img {
   width: 30vw;
-  height: 75%;
-  }
+  height: 40vh;
+}
 
 .project-link {
   text-decoration: none;
@@ -203,12 +210,26 @@ body {
     padding-inline-start: 20px;
   }
   
+  #project-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-tile {
+    margin: 1rem 0;
+  }
+
+  .project-img {
+    width: 80vw;
+    height: 30vh;
+  }
+
+
   .contact-link {
     display: block;
     padding: 10px;
     max-width: 100%;
-  }
-  
+  }  
   
    
 }
