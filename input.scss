@@ -1,135 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Squada+One:wght@400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Squada+One:wght@400&display=swap');
 @import url("https://use.typekit.net/okm5tqy.css");
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  padding: 0;
-  border: 0;
-  margin: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote::before,
-blockquote::after,
-q::before,
-q::after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
+@import './reset.scss';
 
 :root {
   --secondary: #98ddcb;
@@ -141,14 +13,16 @@ table {
 
 body {
   margin: 0;
-}
-body p {
-  font-size: 1.3rem;
-  line-height: 2rem;
-}
-body small {
-  font-size: 1.1rem;
-  line-height: 1.5rem;
+  
+  p {
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+
+  small {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
 }
 
 #background {
@@ -179,13 +53,13 @@ body small {
   align-items: center;
   text-decoration: none;
   font-size: 18px;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   font-weight: 700;
 }
 
 .menu {
   text-decoration: none;
-  color: var(--white);
+  color: var(--white);  
 }
 
 .menu:hover {
@@ -208,14 +82,14 @@ body small {
   align-items: center;
   width: 100%;
   height: 100vh;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   text-align: center;
 }
 
 #my-name {
   text-shadow: 2px 2px 0px var(--primary);
   font-size: 3em;
-  font-family: "Squada One", sans-serif;
+  font-family: 'Squada One', sans-serif;
   font-weight: 900;
   font-style: normal;
   max-width: 450px;
@@ -227,11 +101,11 @@ body small {
   max-width: 900px;
   font-size: 22px;
   font-weight: 300;
-  color: var(--white);
+  color: var(--white);  
 }
 
 #projects {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   text-align: center;
   padding: 30px;
   background: #eee;
@@ -243,17 +117,17 @@ body small {
   font-weight: 700;
 }
 
-#project-grid {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+ #project-grid {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .project-tile {
   padding: 10px;
   margin: 2rem;
-  background-color: var(--primary);
+  background-color: var(--primary);  
 }
 
 .project-tile:hover {
@@ -276,7 +150,7 @@ body small {
 
 .project-title {
   text-align: center;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   font-weight: 600;
   font-size: 20px;
   color: var(--white);
@@ -299,21 +173,22 @@ body small {
 
 #contact-text {
   font-family: aileron, sans-serif;
-  font-size: 40px;
+  font-size: 40px;  
   color: var(--white);
 }
 
 #contact-coffee {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   font-style: italic;
   font-size: 25px;
   font-weight: 300;
-  color: var(--white);
+  color: var(--white);  
 }
+
 
 #links {
   list-style: none;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   font-size: 20px;
   width: 50%;
   margin-bottom: 5vw;
@@ -328,38 +203,50 @@ body small {
 }
 
 @media (max-width: 800px) {
+  
   .menu {
     padding: 10px;
-  }
+}
+  
   #navbar > ul {
     right: 10vw;
-  }
+}
+  
   #bio {
     padding: 15px;
     text-align: justified;
-  }
+}
+  
   #links > ul {
     flex-direction: column;
     font-size: 18px;
     padding-inline-start: 20px;
-  }
+}
+  
   #project-grid {
     display: flex;
     flex-direction: column;
-  }
+}
+
   .project-tile {
     margin: 1rem 0;
-  }
+}
+
   .project-img {
     width: 80vw;
     height: 30vh;
-  }
+}
+
+
   .contact-link {
     display: block;
     padding: 10px;
     max-width: 100%;
-  }
+}  
+  
+   
 }
+
 .contact-link {
   text-decoration: none;
   font-weight: bold;
@@ -370,5 +257,3 @@ body small {
   background-color: var(--secondary);
   color: var(--primary);
 }
-
-/*# sourceMappingURL=style.css.map */
