@@ -5,23 +5,37 @@
 
 :root {
   --secondary: #98ddcb;
-  --dark-secondary: #94B3FD;
   --primary: #f3a6a4;
   --white: #F6F3E4;
   --black: #060022;
 }
 
-body {
-  margin: 0;
+html {
+  scroll-behavior: smooth;
+}
+
+body, * {
+  box-sizing: border-box;
   
   p {
     font-size: 1.3rem;
-    line-height: 2rem;
+    line-height: 1.8rem;
+    padding: 10px 0;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    padding: 10px 0;
   }
 
   small {
     font-size: 1.1rem;
     line-height: 1.5rem;
+  }
+
+  i {
+    padding: 2px;
   }
 }
 
@@ -59,12 +73,38 @@ body {
 
 .menu {
   text-decoration: none;
-  color: var(--white);  
+  color: var(--white);
+
+  &:hover {
+    box-shadow: 0 3px 0 var(--primary);
+  }
 }
 
-.menu:hover {
-  color: var(--primary);
-  background: var(--secondary);
+.button {
+  background-color: var(--black);
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  border-radius: 25px;
+  color: var(--white);
+  padding: 5px 16px;
+  position: relative;
+  transition: background 0.5s, color 0.5s;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -1;
+    border-radius: inherit;
+    background: linear-gradient(to right, var(--secondary), var(--primary));
+    margin: -2px;
+  }
+  
+  &:hover {
+    box-shadow: none;
+    color: var(--black);
+    background: none;
+  }
 }
 
 #link-bar {
@@ -72,28 +112,36 @@ body {
 }
 
 #welcome-section {
-  background-color: var(--black);
+  background: url("src/bg_circles.png") 103% 110%/28% no-repeat, 
+  url("src/bg_circles.png") 92% 86%/28% no-repeat, 
+  url("src/bg_dots.png") 110% 40%/20% no-repeat, 
+  url("src/bg_dots.png") -5% 110%/20% no-repeat,
+  url("src/bg_dots.png") -12% 82%/20% no-repeat,
+  url("src/bg_dots.png") -12% 34%/20% no-repeat,
+  url("src/bg_circles.png") 68% 34%/29% no-repeat,
+  linear-gradient(to right, var(--black), var(--black));
+  padding: 0 15vw;
 }
 
 #welcome {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  width: 100%;
+  align-items: flex-start;
+  width: 40rem;
   height: 100vh;
   font-family: 'Roboto Condensed', sans-serif;
-  text-align: center;
+  text-align: left;
 }
 
 #my-name {
-  text-shadow: 2px 2px 0px var(--primary);
-  font-size: 3em;
+  text-shadow: 3px 3px 0px var(--primary);
+  font-size: 5em;
+  line-height: 4rem;
   font-family: 'Squada One', sans-serif;
   font-weight: 900;
   font-style: normal;
   max-width: 450px;
-  padding: 10px;
   color: var(--white);
 }
 
@@ -117,7 +165,7 @@ body {
   font-weight: 700;
 }
 
- #project-grid {
+  #project-grid {
     align-items: center;
     display: flex;
     flex-wrap: wrap;
@@ -131,7 +179,7 @@ body {
 }
 
 .project-tile:hover {
-  background: var(--dark-secondary);
+  background: var(--secondary);
 }
 
 .project-tile:hover > a > p {
@@ -206,54 +254,52 @@ body {
   
   .menu {
     padding: 10px;
-}
+  }
   
   #navbar > ul {
     right: 10vw;
-}
+  }
   
   #bio {
     padding: 15px;
     text-align: justified;
-}
+  }
   
   #links > ul {
     flex-direction: column;
     font-size: 18px;
     padding-inline-start: 20px;
-}
+  }
   
   #project-grid {
     display: flex;
     flex-direction: column;
-}
+  }
 
   .project-tile {
     margin: 1rem 0;
-}
+  }
 
   .project-img {
     width: 80vw;
     height: 30vh;
-}
+  }
 
 
   .contact-link {
     display: block;
     padding: 10px;
-    max-width: 100%;
-}  
-  
-   
-}
+    max-width: 100%;  
+  }
 
-.contact-link {
-  text-decoration: none;
-  font-weight: bold;
-  color: var(--white);
-}
+  .contact-link {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--white);
+  }
 
-.contact-link:hover {
-  background-color: var(--secondary);
-  color: var(--primary);
+  .contact-link:hover {
+    background-color: var(--secondary);
+    color: var(--primary);
+  }
 }
