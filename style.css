@@ -152,8 +152,8 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5rem;
-  line-height: 1.8rem;
+  font-size: 1.8rem;
+  line-height: 2rem;
   padding: 10px 0;
 }
 
@@ -192,6 +192,7 @@ i {
   height: 60px;
   background: #060022;
   opacity: 0.9;
+  z-index: 10;
 }
 
 #link-bar {
@@ -261,21 +262,44 @@ i {
   font-weight: 300;
 }
 
-section {
+.section {
   padding: 0 10vw;
 }
+.section__title {
+  font-weight: 700;
+}
 @media (min-width: 600px) {
-  section {
+  .section {
     padding: 0 15vw;
   }
 }
 
 #welcome-section {
-  background: url("src/img/bg_circles.png") 75% 299%/127% no-repeat, url("src/img/bg_dots.png") 110% 15%/42% no-repeat, url("src/img/bg_dots.png") -21% 110%/47% no-repeat, linear-gradient(to right, #060022, #060022);
+  background: url("src/img/bg_dots.svg") -50% -29%/160% no-repeat, linear-gradient(to right, #060022, #060022);
+  position: relative;
+  overflow: hidden;
 }
-@media (min-width: 600px) {
+#welcome-section::after {
+  content: "";
+  background: url("src/img/bg_circles.svg") center/contain no-repeat;
+  position: absolute;
+  left: 0;
+  bottom: -45%;
+  width: 190%;
+  height: 100%;
+}
+@media (min-width: 900px) {
   #welcome-section {
-    background: url("src/img/bg_circles.png") 103% 110%/28% no-repeat, url("src/img/bg_circles.png") 92% 86%/28% no-repeat, url("src/img/bg_dots.png") 110% 40%/20% no-repeat, url("src/img/bg_dots.png") -5% 110%/20% no-repeat, url("src/img/bg_dots.png") -12% 82%/20% no-repeat, url("src/img/bg_dots.png") -12% 34%/20% no-repeat, url("src/img/bg_circles.png") 68% 34%/29% no-repeat, linear-gradient(to right, #060022, #060022);
+    background: url("src/img/bg_dots.svg") -30% 130px/contain no-repeat, url("src/img/bg_dots.svg") 140% -80px/contain no-repeat, linear-gradient(to right, #060022, #060022);
+  }
+  #welcome-section::after {
+    content: "";
+    background: url("src/img/bg_circles.svg") center/cover no-repeat;
+    position: absolute;
+    left: 50%;
+    bottom: -12%;
+    width: 80%;
+    height: 100%;
   }
 }
 
@@ -284,7 +308,7 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  height: 400px;
+  height: 100%;
   text-align: left;
 }
 @media (min-width: 600px) {
@@ -312,11 +336,6 @@ section {
   text-align: center;
   padding: 30px;
   background: #eee;
-}
-
-#project-header {
-  font-size: 40px;
-  font-weight: 700;
 }
 
 #project-grid {
@@ -401,8 +420,7 @@ section {
 
 @media (min-width: 600px) {
   #bio {
-    padding: 15px;
-    text-align: justified;
+    padding: 15px 0;
   }
   #links > ul {
     flex-direction: column;
