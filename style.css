@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Squada+One:wght@400&display=swap");
 @import url("https://use.typekit.net/okm5tqy.css");
 html,
@@ -131,43 +131,57 @@ table {
   border-spacing: 0;
 }
 
-:root {
-  --secondary: #98ddcb;
-  --primary: #f3a6a4;
-  --white: #F6F3E4;
-  --black: #060022;
-}
-
 html {
   scroll-behavior: smooth;
 }
 
 body, * {
   box-sizing: border-box;
+  font-family: "Roboto Mono", sans-serif;
 }
-body p, * p {
-  font-size: 1.3rem;
-  line-height: 1.8rem;
-  padding: 10px 0;
-}
-body h2, * h2 {
-  font-size: 1.5rem;
+
+p {
+  font-size: 2rem;
   line-height: 2.2rem;
   padding: 10px 0;
 }
-body small, * small {
-  font-size: 1.1rem;
-  line-height: 1.5rem;
+
+h1 {
+  font-size: 4em;
+  line-height: 3.2rem;
 }
-body i, * i {
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  padding: 10px 0;
+}
+
+small {
+  font-size: 1.2rem;
+  line-height: 1.3rem;
+}
+
+i {
   padding: 2px;
 }
 
-#background {
-  background-image: url(https://i.imgur.com/JzYUUMw.jpg);
-  background-size: cover;
+@media (min-width: 600px) {
+  p {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    padding: 10px 0;
+  }
+  h1 {
+    font-size: 5em;
+    line-height: 4rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    padding: 10px 0;
+  }
 }
-
 #header {
   display: flex;
   position: fixed;
@@ -175,41 +189,48 @@ body i, * i {
   left: 0;
   right: 0;
   width: 100%;
-  height: 50px;
-  background: var(--black);
+  height: 60px;
+  background: #060022;
   opacity: 0.9;
 }
 
-#navbar > ul {
+#link-bar {
   position: fixed;
   right: 0;
-  width: 35vw;
-  height: 50px;
-  display: flex;
+  width: 100%;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   text-decoration: none;
-  font-size: 18px;
-  font-family: "Roboto Condensed", sans-serif;
   font-weight: 700;
+  display: flex;
+}
+@media (min-width: 600px) {
+  #link-bar {
+    list-style: none;
+    width: 40vw;
+  }
 }
 
 .menu {
   text-decoration: none;
-  color: var(--white);
+  color: #F6F3E4;
 }
 .menu:hover {
-  box-shadow: 0 3px 0 var(--primary);
+  box-shadow: 0 3px 0 #f3a6a4;
+}
+
+.menu-icon {
+  display: none;
 }
 
 .button {
-  background-color: var(--black);
+  background-color: #060022;
   border: 2px solid transparent;
   background-clip: padding-box;
   border-radius: 25px;
-  color: var(--white);
-  padding: 5px 16px;
+  color: #F6F3E4;
+  padding: 5px 20px 8px 20px;
   position: relative;
   transition: background 0.5s, color 0.5s;
 }
@@ -222,22 +243,40 @@ body i, * i {
   left: 0;
   z-index: -1;
   border-radius: inherit;
-  background: linear-gradient(to right, var(--secondary), var(--primary));
+  background: linear-gradient(to right, #98ddcb, #f3a6a4);
   margin: -2px;
 }
 .button:hover {
   box-shadow: none;
-  color: var(--black);
+  color: #060022;
   background: none;
 }
 
-#link-bar {
-  list-style: none;
+.tag {
+  display: inline-block;
+  padding: 5px 15px;
+  background: #98ddcb;
+  border-radius: 5px;
+  color: #060022;
+  font-weight: 300;
+}
+
+section {
+  padding: 0 10vw;
+}
+@media (min-width: 600px) {
+  section {
+    padding: 0 15vw;
+  }
 }
 
 #welcome-section {
-  background: url("src/bg_circles.png") 103% 110%/28% no-repeat, url("src/bg_circles.png") 92% 86%/28% no-repeat, url("src/bg_dots.png") 110% 40%/20% no-repeat, url("src/bg_dots.png") -5% 110%/20% no-repeat, url("src/bg_dots.png") -12% 82%/20% no-repeat, url("src/bg_dots.png") -12% 34%/20% no-repeat, url("src/bg_circles.png") 68% 34%/29% no-repeat, linear-gradient(to right, var(--black), var(--black));
-  padding: 0 15vw;
+  background: url("src/img/bg_circles.png") 75% 299%/127% no-repeat, url("src/img/bg_dots.png") 110% 15%/42% no-repeat, url("src/img/bg_dots.png") -21% 110%/47% no-repeat, linear-gradient(to right, #060022, #060022);
+}
+@media (min-width: 600px) {
+  #welcome-section {
+    background: url("src/img/bg_circles.png") 103% 110%/28% no-repeat, url("src/img/bg_circles.png") 92% 86%/28% no-repeat, url("src/img/bg_dots.png") 110% 40%/20% no-repeat, url("src/img/bg_dots.png") -5% 110%/20% no-repeat, url("src/img/bg_dots.png") -12% 82%/20% no-repeat, url("src/img/bg_dots.png") -12% 34%/20% no-repeat, url("src/img/bg_circles.png") 68% 34%/29% no-repeat, linear-gradient(to right, #060022, #060022);
+  }
 }
 
 #welcome {
@@ -245,32 +284,31 @@ body i, * i {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  width: 40rem;
-  height: 100vh;
-  font-family: "Roboto Condensed", sans-serif;
+  height: 400px;
   text-align: left;
+}
+@media (min-width: 600px) {
+  #welcome {
+    width: 40rem;
+    height: 100vh;
+  }
 }
 
 #my-name {
-  text-shadow: 3px 3px 0px var(--primary);
-  font-size: 5em;
-  line-height: 4rem;
+  text-shadow: 3px 3px 0px #f3a6a4;
   font-family: "Squada One", sans-serif;
   font-weight: 900;
-  font-style: normal;
   max-width: 450px;
-  color: var(--white);
+  color: #F6F3E4;
 }
 
 #bio {
   max-width: 900px;
-  font-size: 22px;
   font-weight: 300;
-  color: var(--white);
+  color: #F6F3E4;
 }
 
 #projects {
-  font-family: "Roboto Condensed", sans-serif;
   text-align: center;
   padding: 30px;
   background: #eee;
@@ -278,7 +316,6 @@ body i, * i {
 
 #project-header {
   font-size: 40px;
-  font-family: aileron, sans-serif;
   font-weight: 700;
 }
 
@@ -292,15 +329,15 @@ body i, * i {
 .project-tile {
   padding: 10px;
   margin: 2rem;
-  background-color: var(--primary);
+  background-color: #f3a6a4;
 }
 
 .project-tile:hover {
-  background: var(--secondary);
+  background: #98ddcb;
 }
 
 .project-tile:hover > a > p {
-  color: var(--primary);
+  color: #f3a6a4;
 }
 
 .project-img {
@@ -310,15 +347,14 @@ body i, * i {
 
 .project-link {
   text-decoration: none;
-  color: var(--primary);
+  color: #f3a6a4;
 }
 
 .project-title {
   text-align: center;
-  font-family: "Roboto Condensed", sans-serif;
   font-weight: 600;
   font-size: 20px;
-  color: var(--white);
+  color: #F6F3E4;
 }
 
 #footer {
@@ -326,7 +362,7 @@ body i, * i {
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
-  background: var(--primary);
+  background: #f3a6a4;
   opacity: 0.9;
   width: 100%;
   height: auto;
@@ -337,22 +373,19 @@ body i, * i {
 }
 
 #contact-text {
-  font-family: aileron, sans-serif;
   font-size: 40px;
-  color: var(--white);
+  color: #F6F3E4;
 }
 
 #contact-coffee {
-  font-family: "Roboto Condensed", sans-serif;
   font-style: italic;
   font-size: 25px;
   font-weight: 300;
-  color: var(--white);
+  color: #F6F3E4;
 }
 
 #links {
   list-style: none;
-  font-family: "Roboto Condensed", sans-serif;
   font-size: 20px;
   width: 50%;
   margin-bottom: 5vw;
@@ -366,13 +399,7 @@ body i, * i {
   font-size: 25px;
 }
 
-@media (max-width: 800px) {
-  .menu {
-    padding: 10px;
-  }
-  #navbar > ul {
-    right: 10vw;
-  }
+@media (min-width: 600px) {
   #bio {
     padding: 15px;
     text-align: justified;
@@ -401,11 +428,11 @@ body i, * i {
   .contact-link {
     text-decoration: none;
     font-weight: bold;
-    color: var(--white);
+    color: #F6F3E4;
   }
   .contact-link:hover {
-    background-color: var(--secondary);
-    color: var(--primary);
+    background-color: #98ddcb;
+    color: #f3a6a4;
   }
 }
 
