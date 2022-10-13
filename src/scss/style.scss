@@ -8,8 +8,8 @@ body, * {
 }
 
 p {
-  font-size: 2rem;
-  line-height: 2.2rem;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
   padding: 10px 0;
 }
 
@@ -18,10 +18,15 @@ h1 {
   line-height: 3.2rem;
 }
 
-h2 {
+h2, h3 {
   font-size: 1.8rem;
   line-height: 2rem;
   padding: 10px 0;
+}
+
+h4 {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
 }
 
 small {
@@ -33,11 +38,11 @@ i {
   padding: 2px;
 }
 
-@include for-tablet-portrait-up{
+@include for-tablet-portrait-up {
   p {
-  font-size: 1.3rem;
-  line-height: 1.8rem;
-  padding: 10px 0;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    padding: 10px 0;
   }
 
   h1 {
@@ -132,10 +137,30 @@ i {
 }
 
 .section {
-  padding: 0 10vw;
+  padding: 80px 10vw;
 
   &__title {
     font-weight: 700;
+    padding: 7px;
+    background: $secondary;
+    border-radius: 10px 0;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  
+  &__subsection {
+    &__title {
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    &__subtitle {
+
+    }
+
+    &__list {
+      list-style-type: square;
+    }
   }
 
   @include for-tablet-portrait-up {
