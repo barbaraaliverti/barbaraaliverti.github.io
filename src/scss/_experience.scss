@@ -1,0 +1,67 @@
+.experience {
+
+  &--enviro > &__company {
+    border-bottom: 3px solid $secondary;
+  }
+  
+
+  &__company {
+    border-bottom: 3px solid $primary;
+    padding-bottom: 5px;
+    
+    &__name {
+      font-weight: 700;
+    }
+    
+    &__description {
+      font-weight: 300;
+      font-style: italic;
+    }
+  }
+  
+  &__content {
+    
+    & > *{
+      padding-bottom: 20px;
+      
+      &:first-child{
+        padding-top: 20px;
+      }
+
+      &:last-child {
+        padding-bottom: 40px;
+      }
+    }
+    
+    &__job-title {
+    }
+    
+    &__period {
+      font-weight: 300;
+    }
+    
+    &__results {
+      list-style-type: square;
+      padding-left: 25px;
+    }
+    
+  }
+
+  @include for-tablet-portrait-up {      
+
+    &--enviro > &__content {
+      border-left: 2px solid $secondary;
+    }
+    
+    
+    &--enviro > &__company, &__company {
+      border-bottom: none;
+    }
+    
+    &__content {
+      border-left: 2px solid $primary;
+      padding-left: 20px;
+      margin-left: 5px;
+    }
+  }
+}
