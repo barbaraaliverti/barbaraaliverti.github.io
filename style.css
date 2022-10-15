@@ -148,7 +148,7 @@ h2, h3 {
 
 h4 {
   font-size: 1.2rem;
-  line-height: 1.4rem;
+  line-height: 1.8rem;
 }
 
 small {
@@ -195,28 +195,23 @@ li {
     line-height: 1.5rem;
   }
 }
-.experience--enviro > .experience__company {
-  border-bottom: 3px solid #98ddcb;
-}
-.experience__company {
-  border-bottom: 3px solid #f3a6a4;
-  padding-bottom: 5px;
-}
 .experience__company__name {
+  border-bottom: 2px solid pink;
   font-weight: 700;
+  padding-bottom: 10px;
 }
 .experience__company__description {
+  display: inline-block;
   font-weight: 300;
   font-style: italic;
-}
-.experience__content > * {
+  padding-top: 10px;
   padding-bottom: 20px;
 }
-.experience__content > *:first-child {
-  padding-top: 20px;
+.experience__content {
+  margin-bottom: 40px;
 }
-.experience__content > *:last-child {
-  padding-bottom: 40px;
+.experience__content > :not(:last-child) {
+  padding-bottom: 20px;
 }
 .experience__content__period {
   font-weight: 300;
@@ -226,16 +221,33 @@ li {
   padding-left: 25px;
 }
 @media (min-width: 600px) {
-  .experience--enviro > .experience__content {
-    border-left: 2px solid #98ddcb;
+  .experience__company {
+    border: none;
   }
-  .experience--enviro > .experience__company, .experience__company {
-    border-bottom: none;
+  .experience__company__name {
+    border: none;
+    padding-bottom: 0;
+  }
+  .experience__company__description {
+    padding: 10px 0;
   }
   .experience__content {
     border-left: 2px solid #f3a6a4;
     padding-left: 20px;
     margin-left: 5px;
+  }
+  .experience__content__job-title {
+    position: relative;
+  }
+  .experience__content__job-title::before {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background-color: #f3a6a4;
+    left: -26px;
+    top: 8px;
   }
 }
 
