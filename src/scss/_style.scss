@@ -178,44 +178,43 @@ body, * {
 }
 
 
-#projects {
-  text-align: center;
+.projects {
   padding: 30px;
   background: #eee;
 }
 
-#project-grid {
+.project__grid {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.project-tile {
+.project__card__title {
   padding: 10px;
   margin: 2rem;
   background-color: $primary;  
 }
 
-.project-tile:hover {
+.project__card__title:hover {
   background: $secondary;
 }
 
-.project-tile:hover > a > p {
+.project__card__title:hover > a > p {
   color: $primary;
 }
 
-.project-img {
+.project__card__img {
   width: 30vw;
   height: 40vh;
 }
 
-.project-link {
+.project__card__link {
   text-decoration: none;
   color: $primary;
 }
 
-.project-title {
+.project__card__title {
   text-align: center;
   font-weight: 600;
   font-size: 20px;
@@ -276,16 +275,16 @@ body, * {
     padding-inline-start: 20px;
   }
   
-  #project-grid {
+  .project__grid {
     display: flex;
     flex-direction: column;
   }
 
-  .project-tile {
+  .project__card__title {
     margin: 1rem 0;
   }
 
-  .project-img {
+  .project__card__img {
     width: 80vw;
     height: 30vh;
   }
