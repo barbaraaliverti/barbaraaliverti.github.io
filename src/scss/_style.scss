@@ -80,7 +80,7 @@ body, * {
 .tag {
   display: inline-block;
   padding: 5px 15px;
-  background: $secondary;
+  background: $primary;
   border-radius: 5px;
   color: $black;
   font-weight: 300;
@@ -177,50 +177,6 @@ body, * {
   color: $white;  
 }
 
-
-.projects {
-  padding: 30px;
-  background: #eee;
-}
-
-.project__grid {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.project__card__title {
-  padding: 10px;
-  margin: 2rem;
-  background-color: $primary;  
-}
-
-.project__card__title:hover {
-  background: $secondary;
-}
-
-.project__card__title:hover > a > p {
-  color: $primary;
-}
-
-.project__card__img {
-  width: 30vw;
-  height: 40vh;
-}
-
-.project__card__link {
-  text-decoration: none;
-  color: $primary;
-}
-
-.project__card__title {
-  text-align: center;
-  font-weight: 600;
-  font-size: 20px;
-  color: $white;
-}
-
 #footer {
   display: flex;
   justify-content: space-around;
@@ -273,20 +229,6 @@ body, * {
     flex-direction: column;
     font-size: 18px;
     padding-inline-start: 20px;
-  }
-  
-  .project__grid {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .project__card__title {
-    margin: 1rem 0;
-  }
-
-  .project__card__img {
-    width: 80vw;
-    height: 30vh;
   }
 
   .contact-link {

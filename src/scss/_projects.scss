@@ -1,0 +1,44 @@
+.projects {
+  background-color: $black;
+
+  &__grid {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+
+    & :not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    
+    &__img {
+      width: 300px;
+      height: auto;
+    }
+
+    &__info{
+      padding: 10px;
+      width: calc(100% - 300px);
+    }
+    
+    &__link {
+    }
+    
+    &__title {
+      font-weight: 600;
+      font-size: 20px;
+    }
+  }
+  
+}
