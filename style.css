@@ -195,6 +195,73 @@ li {
     line-height: 1.5rem;
   }
 }
+#header {
+  display: flex;
+  position: fixed;
+  top: -2px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 56px;
+  background: #060022;
+  z-index: 10;
+  align-items: center;
+}
+#header #link-bar {
+  position: fixed;
+  right: 0;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 700;
+  display: flex;
+}
+@media (min-width: 600px) {
+  #header #link-bar {
+    list-style: none;
+    width: 50vw;
+  }
+}
+#header .menu {
+  text-decoration: none;
+  color: #F6F3E4;
+}
+#header .menu:hover {
+  box-shadow: 0 3px 0 #f3a6a4;
+}
+#header .menu-icon {
+  display: none;
+}
+#header .button {
+  background-color: #060022;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  border-radius: 25px;
+  color: #F6F3E4;
+  padding: 5px 20px 8px 20px;
+  position: relative;
+  transition: background 0.5s, color 0.5s;
+}
+#header .button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: inherit;
+  background: linear-gradient(to right, #98ddcb, #f3a6a4);
+  margin: -2px;
+}
+#header .button:hover {
+  box-shadow: none;
+  color: #060022;
+  background: none;
+}
+
 .experience__company__name {
   border-bottom: 2px solid pink;
   font-weight: 700;
@@ -262,28 +329,40 @@ li {
   justify-content: center;
 }
 .projects__grid :not(:last-child) {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .projects__card {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
-  height: 200px;
+  height: 100%;
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
 }
 .projects__card__img {
-  width: 300px;
+  width: 100%;
   height: auto;
 }
 .projects__card__info {
   padding: 10px;
-  width: calc(100% - 300px);
+  width: 100%;
 }
 .projects__card__title {
   font-weight: 600;
-  font-size: 20px;
+}
+@media (min-width: 600px) {
+  .projects .card {
+    flex-direction: row;
+    height: 200px;
+  }
+  .projects__img {
+    width: 300px;
+    height: auto;
+  }
+  .projects__info {
+    width: calc(100% - 300px);
+  }
 }
 
 html {
@@ -293,77 +372,6 @@ html {
 body, * {
   box-sizing: border-box;
   font-family: "Roboto Mono", sans-serif;
-}
-
-#header {
-  display: flex;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 60px;
-  background: #060022;
-  opacity: 0.9;
-  z-index: 10;
-}
-
-#link-bar {
-  position: fixed;
-  right: 0;
-  width: 100%;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  text-decoration: none;
-  font-weight: 700;
-  display: flex;
-}
-@media (min-width: 600px) {
-  #link-bar {
-    list-style: none;
-    width: 50vw;
-  }
-}
-
-.menu {
-  text-decoration: none;
-  color: #F6F3E4;
-}
-.menu:hover {
-  box-shadow: 0 3px 0 #f3a6a4;
-}
-
-.menu-icon {
-  display: none;
-}
-
-.button {
-  background-color: #060022;
-  border: 2px solid transparent;
-  background-clip: padding-box;
-  border-radius: 25px;
-  color: #F6F3E4;
-  padding: 5px 20px 8px 20px;
-  position: relative;
-  transition: background 0.5s, color 0.5s;
-}
-.button:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  border-radius: inherit;
-  background: linear-gradient(to right, #98ddcb, #f3a6a4);
-  margin: -2px;
-}
-.button:hover {
-  box-shadow: none;
-  color: #060022;
-  background: none;
 }
 
 .tag {
