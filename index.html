@@ -11,17 +11,17 @@
       <nav id="header">
         <i class="fa-solid fa-bars menu-icon"></i>
         <ul id="link-bar">
-          <li><a class="menu" href=#welcome-section>home</a></li>
+          <li><a class="menu" href=#home>home</a></li>
           <li><a class="menu" href=#about>about</a></li>
           <li><a class="menu" href=#projects>projects</a></li>
           <li><a class="menu button" href=#contact>contact</a></li>
         </ul>
       </nav>
 
-    <section class="section" id="welcome-section">
-      <div id="welcome">
-        <h1 id="my-name">BÁRBARA<br> ALIVERTI</h1>
-        <div id="bio">
+    <section class="section home" id="home">
+      <div class="home__container">
+        <h1 class="home__title">BÁRBARA<br> ALIVERTI</h1>
+        <div class="home__subtitle">
           <h2><strong>Front-end developer</strong></h2>
           <small><i class="fa-solid fa-location-dot"></i> Calgary, Canada</small>
         </div>
@@ -140,16 +140,17 @@
         <div class="projects__card" id="timestamp-microservice">
           <div class="projects__card__info">
             <h3>Timestamp microservice</h3>
-            <p>This microservice takes a valid Javascript date input and returns a JSON containing the unix and utc formatted date.</p>
             <span class="tag">Node.js</span>
+            <p>This microservice takes a valid Javascript date input and returns a JSON containing the unix and utc formatted date.</p>
+            <a class="projects__card__link" 
+              href="https://boilerplate-project-timestamp-1--barbaraaliverti.repl.co/"
+              target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i>View project</a>  
+            <a class="projects__card__link" 
+              href="https://replit.com/@barbaraaliverti/boilerplate-project-timestamp-1#README.md"
+              target="_blank"><i class="fa-regular fa-folder-open"></i>Repo
+            </a>
           </div>
-          <img class="projects__card__img"
-              src="https://i.imgur.com/Yk2fccb.png"> 
-          </img>
-          <!-- <a class="projects__card__link" 
-          href="https://replit.com/@barbaraaliverti/boilerplate-project-timestamp-1#README.md"
-          target="_blank">
-        </a> -->
+            <img class="projects__card__img" src="https://i.imgur.com/Yk2fccb.png" />
         </div>
 
         <!--POMODORO CLOCK-->
