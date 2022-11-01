@@ -408,6 +408,7 @@ li {
   width: 100%;
 }
 .projects__card__link {
+  text-decoration: none;
   color: #060022;
   padding: 20px 0;
   text-decoration: underline #060022;
