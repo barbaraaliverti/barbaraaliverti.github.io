@@ -38,8 +38,10 @@
       text-decoration: none;
       color: $black;
       padding: 20px 0;
-      text-decoration: underline $black;        
-      text-underline-offset: 4px;
+      font-size: 0.9rem;
+      font-weight: bold;
+      text-decoration: none;        
+      text-underline-offset: 5px;
 
       &:hover {
         text-decoration: underline $primary;

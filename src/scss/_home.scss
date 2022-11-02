@@ -15,7 +15,7 @@
   }
   
   @include for-tablet-landscape-up {
-    background: $dots -30% 130px/contain no-repeat, $dots 140% -80px/contain no-repeat, linear-gradient(to right, #060022, #060022);
+    background: $dots -30% 130px / contain no-repeat, $dots 140% -80px / contain no-repeat, linear-gradient(to right, #060022, #060022);
     height: 100vh;
 
     &::after {
