@@ -7,13 +7,18 @@ body, * {
   font-family: 'Roboto Mono', sans-serif;
 }
 
-.tag {
-  display: inline-block;
-  padding: 5px 15px;
-  background: $primary;
-  border-radius: 5px;
-  color: $black;
-  font-weight: 300;
+.tags__container {
+  .tag {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    color: $black;
+    font-weight: 300;
+    font-size: 0.7rem;
+    background-color: $primary;
+    // background: linear-gradient(45deg, $primary, $secondary);
+  }
+
 }
 
 .section {

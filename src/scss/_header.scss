@@ -21,7 +21,7 @@
     font-weight: 700;
     display: flex;
     
-    @include for-tablet-portrait-up {
+    @include for-desktop-up {
       list-style: none;
       width: 50vw;
     }

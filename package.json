@@ -3,6 +3,6 @@
     "sass": "^1.55.0"
   },
   "scripts" : {
-    "node-sass": "node-sass --watch src/scss/main.scss style.css"
+    "node-sass": "sass --watch src/scss/main.scss style.css"
 }
 }
