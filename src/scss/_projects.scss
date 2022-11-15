@@ -15,6 +15,10 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+
+    h3 {
+      font-weight: bold;
+    }
     
     &:not(:last-child) {
       border-bottom: 1px solid darkgray;
@@ -44,7 +48,7 @@
       text-decoration: none;
       color: $black;
       padding: 20px 0;
-      font-size: 0.9rem;
+      font-size: 1rem;
       font-weight: bold;
       text-decoration: none;        
       text-underline-offset: 5px;
