@@ -354,10 +354,10 @@ a:hover {
 }
 
 .section {
-  padding: 80px 10vw;
+  padding: 60px 10vw;
 }
 .section > :not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .section__title {
   font-weight: 700;
@@ -381,11 +381,14 @@ a:hover {
   border-radius: 10px 0;
   box-shadow: 1px 2px 0px 3px #060022;
   display: inline-block;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 @media (min-width: 600px) {
   .section {
     padding: 80px 15vw 0 15vw;
+  }
+  .section > :not(:last-child) {
+    margin-bottom: 20px;
   }
 }
 
@@ -462,6 +465,9 @@ a:hover {
   align-items: center;
   width: 100%;
 }
+.projects__card h3 {
+  font-weight: bold;
+}
 .projects__card:not(:last-child) {
   border-bottom: 1px solid darkgray;
 }
@@ -484,7 +490,7 @@ a:hover {
   text-decoration: none;
   color: #060022;
   padding: 20px 0;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: bold;
   text-decoration: none;
   text-underline-offset: 5px;
