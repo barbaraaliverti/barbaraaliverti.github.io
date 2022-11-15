@@ -54,6 +54,11 @@
   &__subtitle {
     max-width: 900px;
     font-weight: 300;
-    color: $white;  
+    color: $white;
+
+    & :first-child {
+      margin-top: 20px;
+      border: 2px solid $black;
+    }
   }
 }

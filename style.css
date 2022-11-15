@@ -352,6 +352,10 @@ a:hover {
   font-weight: 300;
   color: #F6F3E4;
 }
+.home__subtitle :first-child {
+  margin-top: 20px;
+  border: 2px solid #060022;
+}
 
 .section {
   padding: 60px 10vw;
@@ -366,7 +370,7 @@ a:hover {
   border-radius: 10px 0;
   box-shadow: 1px 2px 0px 3px #060022;
   display: inline-block;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .section__text > p:not(:last-child) {
   margin-bottom: 20px;
