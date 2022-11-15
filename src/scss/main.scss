@@ -1,0 +1,15 @@
+// Theme colors
+$secondary: #98ddcb;
+$primary: #f3a6a4;
+$white: #F6F3E4;
+$black: #060022;
+
+// BG imgs
+$circles: url('src/img/bg_circles.svg');
+$dots: url('src/img/bg_dots.svg');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Roboto:wght@100;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Squada+One:wght@400&display=swap');
+@import url("https://use.typekit.net/okm5tqy.css");
+@import 'reset', 'mixins', 'text','button', 'header', 'tag','home', 'section', 'experience', 'projects', 'footer', 'style';
+
