@@ -143,25 +143,19 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5rem;
-  line-height: 1.5rem;
+  font-size: 2rem;
+  line-height: 3rem;
   font-family: "Roboto Mono", monospace;
 }
 
 h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-family: "Roboto Mono", monospace;
+}
+
+h4, h5 {
   font-size: 1.2rem;
-  line-height: 1.2rem;
-  font-family: "Roboto Mono", monospace;
-}
-
-h4 {
-  font-size: 1.1rem;
-  line-height: 1.1rem;
-  font-family: "Roboto Mono", monospace;
-}
-
-h5 {
-  font-size: 1rem;
   line-height: 1.8rem;
   font-family: "Roboto Mono", monospace;
 }
