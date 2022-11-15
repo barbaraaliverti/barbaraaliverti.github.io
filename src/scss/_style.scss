@@ -7,15 +7,3 @@ body, * {
   font-family: 'Roboto', sans-serif;
 }
 
-.tags__container {
-  .tag {
-    display: inline-block;
-    padding: 5px;
-    border-radius: 5px;
-    color: $black;
-    font-weight: 400;
-    font-size: 0.9rem;
-    background-color: $primary;
-    background: linear-gradient(45deg, $primary, $white);
-  }
-}

@@ -290,6 +290,19 @@ a:hover {
   display: none;
 }
 
+.tags__container .tag {
+  display: inline-block;
+  padding: 5px;
+  border-radius: 5px;
+  color: #060022;
+  font-weight: 400;
+  font-size: 0.9rem;
+  background: linear-gradient(45deg, #f3a6a4, #F6F3E4);
+}
+.tags__container .tag.backend {
+  background: linear-gradient(45deg, #98ddcb, #F6F3E4);
+}
+
 .home {
   background: url("src/img/bg_dots.svg") -50% -29%/160% no-repeat, linear-gradient(to right, #060022, #060022);
   position: relative;
@@ -581,17 +594,6 @@ html {
 body, * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-}
-
-.tags__container .tag {
-  display: inline-block;
-  padding: 5px;
-  border-radius: 5px;
-  color: #060022;
-  font-weight: 400;
-  font-size: 0.9rem;
-  background-color: #f3a6a4;
-  background: linear-gradient(45deg, #f3a6a4, #F6F3E4);
 }
 
 /*# sourceMappingURL=style.css.map */
