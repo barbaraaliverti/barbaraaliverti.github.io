@@ -468,9 +468,13 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  padding: 20px 0;
 }
 .projects__card h3 {
   font-weight: bold;
+}
+.projects__card:first-child {
+  padding-top: 0;
 }
 .projects__card:not(:last-child) {
   border-bottom: 1px solid darkgray;
@@ -484,11 +488,11 @@ a:hover {
 .projects__card__info {
   width: 100%;
 }
-.projects__card__info > * {
-  margin-bottom: 20px;
-}
 .projects__card__info:first-child {
   margin-top: 20px;
+}
+.projects__card__info > * {
+  margin-bottom: 20px;
 }
 .projects__card__link {
   text-decoration: none;

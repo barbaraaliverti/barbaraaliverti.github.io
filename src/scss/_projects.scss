@@ -15,9 +15,14 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    padding: 20px 0;
 
     h3 {
       font-weight: bold;
+    }
+
+    &:first-child {
+      padding-top: 0;
     }
     
     &:not(:last-child) {
@@ -35,12 +40,12 @@
     &__info{
       width: 100%;
 
-      & > * {
-        margin-bottom: 20px;
-      }
-
       &:first-child {
         margin-top: 20px;
+      }
+
+      & > * {
+        margin-bottom: 20px;
       }
     }
     
