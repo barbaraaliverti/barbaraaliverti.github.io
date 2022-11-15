@@ -8,13 +8,13 @@
   </head>
   
   <body>
-      <nav id="header">
+      <nav class="header">
         <i class="fa-solid fa-bars menu-icon"></i>
-        <ul id="link-bar">
+        <ul class="link-bar">
           <li><a class="menu" href=#home>home</a></li>
           <li><a class="menu" href=#about>about</a></li>
           <li><a class="menu" href=#projects>projects</a></li>
-          <li><a class="menu button" href=#contact>contact</a></li>
+          <li><a class="button" href=#contact>contact</a></li>
         </ul>
       </nav>
 
@@ -31,19 +31,35 @@
     <section class="section" id="about">
       <h2 class="section__title">about</h2>
       <div class="section__text">
-        <p>Hi 👋<br> My name is Bárbara, I'm Brazilian and currently living in Calgary, Canada.</p>
-        <p>I'm a former Environmental Engineer who decided to learn some coding during the pandemic and ended up going on a career transition into web development. So in 2020, I started my studies independently using open source tools such as freeCodeCamp and online courses.</p>
+        <p>
+          Hi 👋 My name is Bárbara, I'm Brazilian and currently living in Calgary, Canada, since November 2021.
+        </p>
+        <p>
+          I'm a Front-end developer working with global brands at Wunderman Thompson Technology, using mainly HTML, CSS, JavaScript and React. I'm a former Environmental Engineer that decided to learn some coding and ended up going on a career transition into web development. 
+        </p>
+        <p>
+        I started my new career as a customer service agent at startup EuNenem, and after a few months of studying web development through <a target="_blank" href="https://www.freecodecamp.org/" rel="noreferrer">Free Code Camp</a>, I started working as a Trainee Front-end Developer at EuNenem, while I kept studying.
+        </p>
+        <p>
+          After a year at EuNenem, I took part in a mentorship program for women on career transitions, promoted by Wunderman Thompson Technology. I learned a lot about how to develop my previous skills focusing on my new career. As a result, I was hired as a CMS author by Wunderman Thompson Technology, moving to the front-end team six months later. I've been working with clients from Canada and Brazil since then, while I also had the chance to take my studies even further with the help of mentors from my team.
+        </p>
+        <p>
+          Concurrently with my current position at Wunderman Thompson Technology, I'm also stuyding TypeScript and back-end by developing some personal projects.
+        </p>
+        <p>
+          It's been a tough journey so far, but I love what I do and I'm thrilled about my future in tech :)
+        </p>
       </div>
       <div class="section__subsection">
         <h3 class="section__subsection__title">work experience</h3>
         <div class="experience">
           <div class="experience__company">
             <h4 class="experience__company__name">Wunderman Thompson Technology Brazil</h4>
-            <small class="experience__company__description">IT Services and Consulting - Pelotas, Brazil</small>
+            <small class="experience__company__description">IT Services and Consulting - Pelotas, Brazil (remote)</small>
           </div>
           <div class="experience__content">
             <div>
-              <p class="experience__content__job-title">Front-end Developer</p>
+              <h5 class="experience__content__job-title">Front-end Developer</h5>
               <small class="experience__content__period">January/2022 - now</small>
             </div>
             <ul class="experience__content__results">
@@ -58,7 +74,7 @@
               </li>
             </ul>
             <div>
-              <p class="experience__content__job-title">CMS Author, AEM Cloud</p>
+              <h5 class="experience__content__job-title">CMS Author, AEM Cloud</h5>
               <small class="experience__content__period">July/2021 - December/2021</small>
             </div>
             <ul class="experience__content__results">
@@ -74,11 +90,11 @@
         <div class="experience">
           <div class="experience__company">
             <h4 class="experience__company__name">EuNeném</h4>
-            <small class="experience__company__description">Online baby registry - Belo Horizonte, Brazil</small>
+            <small class="experience__company__description">Online baby registry Startup - Belo Horizonte, Brazil (remote)</small>
           </div>
           <div class="experience__content">
             <div>
-              <p class="experience__content__job-title">Trainee Front-end Developer</p>
+              <h5 class="experience__content__job-title">Trainee Front-end Developer</h5>
               <small class="experience__content__period">July/2020 - July/2021</small>
             </div>
             <ul class="experience__content__results">
@@ -93,7 +109,7 @@
               </li>
             </ul>
             <div>
-              <p class="experience__content__job-title">Customer Support</p>
+              <h5 class="experience__content__job-title">Customer Support</h5>
               <small class="experience__content__period">April/2020 - June/2020</small>
             </div>
             <ul class="experience__content__results">
@@ -116,7 +132,7 @@
           </div>
           <div class="experience__content">
             <div>
-              <p class="experience__content__job-title">Environmental Analyst</p>
+              <h5 class="experience__content__job-title">Environmental Analyst</h5>
               <small class="experience__content__period">May/2019 - December/2019</small>
             </div>
             <ul class="experience__content__results">
@@ -131,7 +147,7 @@
           </div>
           <div class="experience__content">
             <div>
-              <p class="experience__content__job-title">Environmental Analyst</p>
+              <h5 class="experience__content__job-title">Environmental Analyst</h5>
               <small class="experience__content__period">February/2018 - April/2019</small>
             </div>
             <ul class="experience__content__results">
@@ -147,11 +163,34 @@
       <div class="projects__grid">
 
         <p>ADD NEW PROJECTS!! ACCORDION, LANDING PAGE, KUDOS, NWL</p>
-        <!--FAQ Accordion page-->
+
+        <!--COVID LANDING PAGE-->
+        <div class="projects__card" id="timestamp-microservice">
+          <div class="projects__card__info">
+            <h3>Covid-19 Landing Page</h3>
+            <p>A landing page built during my training at Wunderman Thompson Technology using JavaScript and Sass.</p>
+            <div>
+              <a class="projects__card__link" 
+              href="https://covid-landing-page.vercel.app/"
+              target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i>View project</a>  
+              <a class="projects__card__link" 
+              href="https://github.com/barbaraaliverti/covid-landing-page"
+              target="_blank"><i class="fa-regular fa-folder-open"></i>Repo
+            </a>
+          </div>
+          <div class="tags__container">
+            <span class="tag">Sass</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          </div>
+            <img class="projects__card__img" src="./src/img/project_covid_landing_page.png" />
+        </div>
+
+        <!--FAQ ACCORDION PAGE-->
         <div class="projects__card" id="timestamp-microservice">
           <div class="projects__card__info">
             <h3>FAQ Accordion Page</h3>
-            <p>A challenge from Frontend Mentor, in which I wanted to try some new things for me, such as mobile-first workflow and Sass.</p>
+            <p>A FAQ page with an accordion built with CSS only (no JS!). A challenge from Frontend Mentor, in which I wanted to try some new things, such as mobile-first workflow and Sass.</p>
             <div>
               <a class="projects__card__link" 
               href="https://faq-accordion-card-umber-five.vercel.app/"
@@ -165,7 +204,7 @@
             <span class="tag">Sass</span>
           </div>
           </div>
-            <img class="projects__card__img" src="" />
+            <img class="projects__card__img" src="./src/img/project_faq_accordion.png" />
         </div>
 
         <!--TIMESTAMP MICROSERVICE-->
@@ -180,11 +219,11 @@
               <a class="projects__card__link" 
               href="https://replit.com/@barbaraaliverti/boilerplate-project-timestamp-1#README.md"
               target="_blank"><i class="fa-regular fa-folder-open"></i>Repo
-            </a>
-          </div>
-          <div class="tags__container">
-            <span class="tag">Node.js</span>
-          </div>
+              </a>
+            </div>
+            <div class="tags__container">
+              <span class="tag">Node.js</span>
+            </div>
           </div>
             <img class="projects__card__img" src="src/img/project_microservice.png" />
         </div>
@@ -240,7 +279,6 @@
         <div class="projects__card" id="drum-machine">
           <div class="projects__card__info">
             <h3>Drum Machine</h3>
-            <span class="tag">React</span>
             <p>A drum machine that plays sounds as the user clicks or presses the correspondent key.</p>
             <div>
               <a class="projects__card__link" 
@@ -312,9 +350,13 @@
           <div class="projects__card__info">
             <h3>Random quote generator</h3>
             <p>Every click generates a new quote from a film.</p>
-            <a class="projects__card__link" 
-              href="https://codepen.io/baloobali/full/YzqpKOy"
-              target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i>View project</a>
+            <div>
+              <a class="projects__card__link" 
+                href="https://codepen.io/baloobali/full/YzqpKOy"
+                target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                View project
+              </a>
+            </div>
               <div class="tags__container">
                 <span class="tag">JQuery</span>
                 <span class="tag">CSS</span>
@@ -330,9 +372,13 @@
           <div class="projects__card__info">
             <h3>Documentation page</h3>
             <p>A JavaScript documentation page built to practice responsive web design and HTML tags.</p>
-            <a class="projects__card__link" 
-              href="https://codepen.io/baloobali/full/GRpEgGX"
-              target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i>View project</a>
+            <div>
+              <a class="projects__card__link" 
+                href="https://codepen.io/baloobali/full/GRpEgGX"
+                target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                View project
+              </a>
+            </div>
               <div class="tags__container">
                 <span class="tag">HTML</span>
                 <span class="tag">CSS</span>
@@ -348,9 +394,13 @@
           <div class="projects__card__info">
             <h3>Landing Page</h3>
             <p>A landing page for a fictional e-bike, built to practice HTML and CSS.</p>
-            <a class="projects__card__link" 
-              href="https://codepen.io/baloobali/full/jObPjpp"
-              target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i>View project</a>
+            <div>
+              <a class="projects__card__link" 
+                href="https://codepen.io/baloobali/full/jObPjpp"
+                target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                View project
+              </a>
+            </div>
               <div class="tags__container">
                 <span class="tag">HTML</span>
                 <span class="tag">CSS</span>
@@ -366,9 +416,13 @@
           <div class="projects__card__info">
             <h3>Survey Form</h3>
             <p>A simple survey form that I built to practice form related tags.</p>
-            <a class="projects__card__link" 
-              href="https://codepen.io/baloobali/full/MWXopMO"
-              target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i>View project</a>
+            <div>
+              <a class="projects__card__link" 
+                href="https://codepen.io/baloobali/full/MWXopMO"
+                target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                View project
+              </a>
+            </div>
               <div class="tags__container">
                 <span class="tag">HTML</span>
                 <span class="tag">CSS</span>
@@ -384,9 +438,13 @@
           <div class="projects__card__info">
             <h3>Tribute page</h3>
             <p>My first web development project ever. A tribute page for Frida Kahlo, built with HTML, CSS and a lot of excitement.</p>
-            <a class="projects__card__link" 
-              href="https://codepen.io/baloobali/full/jOPLwPg"
-              target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i>View project</a>
+            <div>
+              <a class="projects__card__link" 
+                href="https://codepen.io/baloobali/full/jOPLwPg"
+                target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                View project
+              </a>
+            </div>
               <div class="tags__container">
                 <span class="tag">HTML</span>
                 <span class="tag">CSS</span>
@@ -399,32 +457,34 @@
 
     </section>
     <section id="contact">
-      <div id="footer">      
-        <div id="contact-me">      
-          <h1 id="contact-text">contact</h1>
-          <p id="contact-coffee">Let's chat!</p>      
-        </div>      
-        <div id="links">
-          <ul>  
+      <div class="footer footer__container">      
+        <div class="footer__contact">      
+          <h2 class="footer__contact__header">Let's chat!</h2>  
+        </div>
+        <div class="footer__img__buttons">
+          <ul class="footer__links">  
             <!--LINKEDIN-->
-            <li>
-              <a class="contact-link" 
+            <li class="footer__links__item">
+              <a class="button" 
               href="https://www.linkedin.com/in/barbaraaliverti/"
               target=_blank><i class="fab fa-linkedin"></i>  LinkedIn</a>
             </li>
             <!--EMAIL-->
-            <li>
-              <a class="contact-link" 
+            <li class="footer__links__item">
+              <a class="button" 
                 href="mailto:barbaraaliverti@gmail.com" 
-                target=_blank><i class="fas fa-envelope-square"></i>  Email</a>
+                target=_blank><i class="fas fa-envelope-square"></i>  E-mail</a>
             </li>
-            <!--FFC-->
-            <li>
-              <a class="contact-link" 
+            <!--GITHUB-->
+            <li class="footer__links__item">
+              <a class="button" 
                 href="https://github.com/barbaraaliverti/" 
                 target=_blank><i class="fab fa-github"></i>  GitHub</a>
             </li>
           </ul>
+          <figure class="footer__avatar__container" >
+            <img class="footer__avatar__img" src="./src/img/octocat.png" alt="A girl octocat with cat ears and tentacles that has white skin, curly brown hair, bright eyes and a smile. She is wearing a purple jacket and holding a tiny alligator."/>
+          </figure>
         </div>
       </div>
     </section>

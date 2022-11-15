@@ -1,0 +1,39 @@
+.section {
+  padding: 80px 10vw;
+
+  & > :not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    font-weight: 700;
+    padding: 7px;
+    background: $secondary;
+    border-radius: 10px 0;
+    box-shadow: 1px 2px 0px 3px $black;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  
+&__text > p:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+  &__subsection {
+    padding-top: 10vh;
+
+    &__title {
+      font-weight: 700;
+      padding: 7px;
+      background: $secondary;
+      border-radius: 10px 0;
+      box-shadow: 1px 2px 0px 3px $black;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+  }
+
+  @include for-tablet-portrait-up {
+    padding: 80px 15vw 0 15vw;
+  }
+}

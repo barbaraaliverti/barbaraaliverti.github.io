@@ -31,6 +31,10 @@
     &__results {
       list-style-type: square;
       padding-left: 25px;
+
+      &>:not(:last-child) {
+        margin-bottom: 10px;
+      }
     }
     
   }

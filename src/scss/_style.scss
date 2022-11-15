@@ -4,7 +4,7 @@ html {
 
 body, * {
   box-sizing: border-box;
-  font-family: 'Roboto Mono', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .tags__container {
@@ -13,114 +13,9 @@ body, * {
     padding: 5px;
     border-radius: 5px;
     color: $black;
-    font-weight: 300;
-    font-size: 0.7rem;
+    font-weight: 400;
+    font-size: 0.9rem;
     background-color: $primary;
-    // background: linear-gradient(45deg, $primary, $secondary);
-  }
-
-}
-
-.section {
-  padding: 80px 10vw;
-
-  & > :not(:last-child) {
-    margin-bottom: 20px;
-  }
-
-  &__title {
-    font-weight: 700;
-    padding: 7px;
-    background: $secondary;
-    border-radius: 10px 0;
-    display: inline-block;
-    margin-bottom: 20px;
-  }
-  
-&__text > p:not(:last-child) {
-  margin-bottom: 20px;
-}
-
-  &__subsection {
-    &__title {
-      font-weight: 700;
-      margin-bottom: 20px;
-    }
-  }
-
-  @include for-tablet-portrait-up {
-    padding: 80px 15vw;
-  }
-}
-
-#footer {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  align-items: center;
-  background: $primary;
-  opacity: 0.9;
-  width: 100%;
-  height: auto;
-}
-
-#contact-me {
-  text-align: center;
-}
-
-#contact-text {
-  font-size: 40px;  
-  color: $white;
-}
-
-#contact-coffee {
-  font-style: italic;
-  font-size: 25px;
-  font-weight: 300;
-  color: $white;  
-}
-
-
-#links {
-  list-style: none;
-  font-size: 20px;
-  width: 50%;
-  margin-bottom: 5vw;
-}
-
-#links > ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  list-style: none;
-  font-size: 25px;
-}
-
-@include for-tablet-portrait-up {  
-  .home__subtitle {
-    padding: 15px 0;
-  }
-  
-  #links > ul {
-    flex-direction: column;
-    font-size: 18px;
-    padding-inline-start: 20px;
-  }
-
-  .contact-link {
-    display: block;
-    padding: 10px;
-    max-width: 100%;  
-  }
-
-  .contact-link {
-    text-decoration: none;
-    font-weight: bold;
-    color: $white;
-  }
-
-  .contact-link:hover {
-    background-color: $secondary;
-    color: $primary;
+    background: linear-gradient(45deg, $primary, $white);
   }
 }

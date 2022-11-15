@@ -1,4 +1,4 @@
-#header {
+.header {
   display: flex;
   position: fixed;
   top: -2px;
@@ -10,7 +10,7 @@
   z-index: 10;
   align-items: center;
 
-  #link-bar {
+  .link-bar {
     position: fixed;
     right: 0;
     width: 100%;
@@ -31,39 +31,12 @@
     text-decoration: none;
     color: $white;
     
-    &:hover {
+    &:hover:not(.button) {
       box-shadow: 0 3px 0 $primary;
     }
   }
   
   .menu-icon {
     display: none;
-  }
-  
-  .button {
-    background-color: $black;
-    border: 2px solid transparent;
-    background-clip: padding-box;
-    border-radius: 25px;
-    color: $white;
-    padding: 5px 20px 8px 20px;
-    position: relative;    
-    transition: background 0.5s, color 0.5s;
-    
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0; right: 0; bottom: 0; left: 0;
-      z-index: -1;
-      border-radius: inherit;
-      background: linear-gradient(to right, $secondary, $primary);
-      margin: -2px;
-    }
-    
-    &:hover {
-      box-shadow: none;
-      color: $black;
-      background: none;
-    }
-  }
+  }  
 }

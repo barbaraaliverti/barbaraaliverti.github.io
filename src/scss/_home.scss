@@ -2,7 +2,7 @@
   background: $dots -50% -29%/160% no-repeat, linear-gradient(to right, #060022, #060022);
   position: relative;
   overflow: hidden;
-  height: 50vh;
+  height: 100vh;
 
   &::after {
     content: '';
@@ -16,7 +16,6 @@
   
   @include for-tablet-landscape-up {
     background: $dots -30% 130px / contain no-repeat, $dots 140% -80px / contain no-repeat, linear-gradient(to right, #060022, #060022);
-    height: 100vh;
 
     &::after {
       content: '';

@@ -7,24 +7,37 @@
     flex-direction: column;
     justify-content: center;
 
-    & :not(:last-child) {
-      margin-bottom: 20px;
-    }
   }
-
+  
   &__card {
     display: flex;
-    border-bottom: 1px solid darkgray;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
+    
+    &:not(:last-child) {
+      border-bottom: 1px solid darkgray;
+    }
+
+    &:last-child {
+      margin-bottom: 80px;
+    }
     
     &__img {      
       display: none;
     }
-
+    
     &__info{
       width: 100%;
+
+      & > * {
+        margin-bottom: 20px;
+      }
+
+      &:first-child {
+        margin-top: 20px;
+      }
     }
     
     &__link {
@@ -61,14 +74,14 @@
   @include for-desktop-up {
     &__card {
       flex-direction: row;
-      min-height: 250px;
+      // min-height: 250px;
       height: auto;
 
       &__img {
         display: block;
         object-fit: cover;
-        width: 300px;
-        height: 200px;
+        width: 250px;
+        height: 150px;
         margin-left: 30px;
       }
   
