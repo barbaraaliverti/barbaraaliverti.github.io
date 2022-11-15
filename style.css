@@ -143,25 +143,19 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5rem;
-  line-height: 1.5rem;
+  font-size: 2rem;
+  line-height: 3rem;
   font-family: "Roboto Mono", monospace;
 }
 
 h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-family: "Roboto Mono", monospace;
+}
+
+h4, h5 {
   font-size: 1.2rem;
-  line-height: 1.2rem;
-  font-family: "Roboto Mono", monospace;
-}
-
-h4 {
-  font-size: 1.1rem;
-  line-height: 1.1rem;
-  font-family: "Roboto Mono", monospace;
-}
-
-h5 {
-  font-size: 1rem;
   line-height: 1.8rem;
   font-family: "Roboto Mono", monospace;
 }
@@ -358,12 +352,16 @@ a:hover {
   font-weight: 300;
   color: #F6F3E4;
 }
+.home__subtitle :first-child {
+  margin-top: 20px;
+  border: 2px solid #060022;
+}
 
 .section {
-  padding: 80px 10vw;
+  padding: 60px 10vw;
 }
 .section > :not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .section__title {
   font-weight: 700;
@@ -372,7 +370,7 @@ a:hover {
   border-radius: 10px 0;
   box-shadow: 1px 2px 0px 3px #060022;
   display: inline-block;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .section__text > p:not(:last-child) {
   margin-bottom: 20px;
@@ -387,11 +385,14 @@ a:hover {
   border-radius: 10px 0;
   box-shadow: 1px 2px 0px 3px #060022;
   display: inline-block;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 @media (min-width: 600px) {
   .section {
     padding: 80px 15vw 0 15vw;
+  }
+  .section > :not(:last-child) {
+    margin-bottom: 20px;
   }
 }
 
@@ -467,6 +468,13 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  padding: 20px 0;
+}
+.projects__card h3 {
+  font-weight: bold;
+}
+.projects__card:first-child {
+  padding-top: 0;
 }
 .projects__card:not(:last-child) {
   border-bottom: 1px solid darkgray;
@@ -480,17 +488,17 @@ a:hover {
 .projects__card__info {
   width: 100%;
 }
-.projects__card__info > * {
-  margin-bottom: 20px;
-}
 .projects__card__info:first-child {
   margin-top: 20px;
+}
+.projects__card__info > * {
+  margin-bottom: 20px;
 }
 .projects__card__link {
   text-decoration: none;
   color: #060022;
   padding: 20px 0;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: bold;
   text-decoration: none;
   text-underline-offset: 5px;

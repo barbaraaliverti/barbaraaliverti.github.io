@@ -15,6 +15,15 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    padding: 20px 0;
+
+    h3 {
+      font-weight: bold;
+    }
+
+    &:first-child {
+      padding-top: 0;
+    }
     
     &:not(:last-child) {
       border-bottom: 1px solid darkgray;
@@ -31,12 +40,12 @@
     &__info{
       width: 100%;
 
-      & > * {
-        margin-bottom: 20px;
-      }
-
       &:first-child {
         margin-top: 20px;
+      }
+
+      & > * {
+        margin-bottom: 20px;
       }
     }
     
@@ -44,7 +53,7 @@
       text-decoration: none;
       color: $black;
       padding: 20px 0;
-      font-size: 0.9rem;
+      font-size: 1rem;
       font-weight: bold;
       text-decoration: none;        
       text-underline-offset: 5px;
