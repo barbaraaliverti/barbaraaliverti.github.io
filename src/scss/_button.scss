@@ -7,8 +7,27 @@
   padding: 5px 20px 8px 20px;
   position: relative;    
   transition: background 0.5s, color 0.5s;
+
+  &__contact {
+    z-index: 1;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0; right: 0; bottom: 0; left: 0;
+      z-index: -1;
+      border-radius: inherit;
+      background: $black;
+    }
+    
+    &:hover {
+      &::after {
+        z-index: -2;        
+      }
+    }
+  }
   
-  &:before {
+  &::before {
     content: '';
     position: absolute;
     top: 0; right: 0; bottom: 0; left: 0;
@@ -17,6 +36,7 @@
     background: linear-gradient(to right, $secondary, $primary);
     margin: -2px;
   }
+
   
   &:hover {
     box-shadow: none;

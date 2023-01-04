@@ -224,7 +224,24 @@ a:hover {
   position: relative;
   transition: background 0.5s, color 0.5s;
 }
-.button:before {
+.button__contact {
+  z-index: 1;
+}
+.button__contact::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: inherit;
+  background: #060022;
+}
+.button__contact:hover::after {
+  z-index: -2;
+}
+.button::before {
   content: "";
   position: absolute;
   top: 0;
